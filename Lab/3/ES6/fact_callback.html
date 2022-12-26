@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            Fact_Callback
+        </title>
+    </head>
+    <body>
+        <h1>Factorial</h1>
+        <p>Enter a number: <input type="number" id="num"><br>
+        <button onclick="fibo()">Print Factorial</button></p>
+        
+        <p id="demo1"></p>
+    <script>
+        function fibo()
+        {
+          
+            function myPrint(c){
+                document.getElementById("demo1").innerHTML=c;
+            }
+            let a = document.getElementById("num").value;
+            let n1=1;
+            
+            function myCal(a,myCallback){
+                for(let i=a;i>=1;i--)
+            {
+                n1=n1*i;
+            }
+               myCallback(n1);
+            }
+            myCal(a,myPrint);
+        }
+    </script>
+    </body>
+</html>

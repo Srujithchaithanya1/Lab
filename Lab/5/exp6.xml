@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="exp6.xsl"?>
+<!DOCTYPE bookDet SYSTEM "exp6.dtd">
+<?xml-model href="exp6.xsd"?>
+<bookDet>
+    <Book>
+        <Bookname>WP</Bookname>
+        <Author>Giri Babu</Author>
+        <Publisher>CVR</Publisher>
+        <Price>650</Price>
+    </Book>
+    <Book>
+        <Bookname>CPG</Bookname>
+        <Author>Sravan</Author>
+        <Publisher>NIST</Publisher>
+        <Price>399</Price>
+    </Book>
+    <Book>
+        <Bookname>CN</Bookname>
+        <Author>Forouzan</Author>
+        <Publisher>Technical</Publisher>
+        <Price>500</Price>
+    </Book>
+</bookDet>

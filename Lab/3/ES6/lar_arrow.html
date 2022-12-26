@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            Large_Arrow
+        </title>
+    </head>
+    <body>
+        <h1>Largest Number</h1>
+        <p>Enter number1: <input type="number" id="num1"><br>
+        <p>Enter number2: <input type="number" id="num2"><br>
+        <button onclick="fibo()">Print Large number</button></p>
+        
+        <p id="demo1"></p>
+        <script>
+            function fibo(){
+            let a = document.getElementById("num1").value;
+            let b = document.getElementById("num2").value;
+            let n;
+            let output = (a,b)=> {
+            if(a>b){
+                n=a;
+            }
+            else{
+                n=b;
+            }
+        };
+        output(a,b);
+        document.getElementById("demo1").innerHTML=n;
+    }
+        </script>
+    </body>

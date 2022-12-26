@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            Fib_Arrow
+        </title>
+    </head>
+    <body>
+        <h1>Fibonacci series</h1>
+        <p>Enter a number: <input type="number" id="num"><br>
+        <button onclick="fibo()">Print Fibonacci series</button></p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+            function fibo(){
+            let number = document.getElementById("num").value;
+            let arr = []
+            let output = (number)=> {
+                let n1=0,n2=1,nextterm;
+            document.getElementById("demo").innerHTML="Fibonacci series....";
+                for(let i=1;i<=number;i++)
+            {
+                arr.push(n1);
+                nextterm=n1+n2;
+                n1=n2;
+                n2=nextterm;
+            }
+        };
+        output(number);
+        document.getElementById("demo1").innerHTML=arr;
+    }
+        </script>
+    </body>

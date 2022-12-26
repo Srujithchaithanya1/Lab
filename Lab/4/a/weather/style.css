@@ -1,0 +1,49 @@
+* {
+    margin: 5;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background-image: url('cloud.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.input {
+    text-align: center;
+    margin: 100px 0;
+}
+
+input[type="text"] {
+    height: 50px;
+    width: 600px;
+    background: #b8c01d;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 10px;
+}
+
+.in {
+    display: inline;
+}
+
+input[type="submit"] {
+    height: 50px;
+    width: 600px;
+    background: skyblue;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 10px;
+}
+
+.display {
+    text-align: center;
+}

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Fib_Callback
+        </title>
+    </head>
+    <body>
+        <h1>Fibonacci series</h1>
+        <p>Enter a number: <input type="number" id="num"><br>
+        <button onclick="fibo()">Print Fibonacci series</button></p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+    <script>
+        function fibo()
+        {
+            document.getElementById("demo").innerHTML="Fibonacci series...";
+            function myPrint(c){
+                document.getElementById("demo1").innerHTML=c;
+            }
+            let a = document.getElementById("num").value;
+            let n1=0,n2=1,nextterm;
+            let arr=[];
+            function myCal(a,myCallback){
+               for(let i=1;i<=a;i++){
+                arr.push(n1);
+                nextterm=n1+n2;
+                n1=n2;
+                n2=nextterm;
+               } 
+               myCallback(arr);
+            }
+            myCal(a,myPrint);
+        }
+    </script>
+    </body>
+</html>

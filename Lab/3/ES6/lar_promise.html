@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            Large_Promise
+        </title>
+    </head>
+    <body>
+        <h1>Largest Number</h1>
+        <p>Enter number1: <input type="number" id="num1"><br>
+            <p>Enter number2: <input type="number" id="num2"><br>
+            <button onclick="fibo()">Print Large number</button></p>
+            
+            <p id="demo1"></p>
+    <script>
+        async function fibo()
+        {
+            
+            function myDisplay(c){
+                document.getElementById("demo1").innerHTML=c;
+            }
+            let myPromise = new Promise(function(resolve,reject){
+                let a = document.getElementById("num1").value;
+                let b = document.getElementById("num2").value;
+               if(a!=null && b!=null){
+                resolve(Math.max(a,b));
+               }
+               else{
+                reject("error");
+               }
+            });
+            await myPromise.then(
+                function(value) {myDisplay(value);},
+                function(error) {myDisplay(error);}
+            );
+        }
+    </script>
+</body>
+</html>

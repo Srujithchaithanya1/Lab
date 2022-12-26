@@ -1,0 +1,6 @@
+<!ELEMENT bookDet (Book+)>
+<!ELEMENT Book (Bookname,Author,Publisher,Price)>
+<!ELEMENT Bookname (#PCDATA)>
+<!ELEMENT Author (#PCDATA)>
+<!ELEMENT Publisher (#PCDATA)>
+<!ELEMENT Price (#PCDATA)>

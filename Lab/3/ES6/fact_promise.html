@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            Fact_Promise
+        </title>
+    </head>
+    <body>
+        <h1>Factorial</h1>
+        <p>Enter a number: <input type="number" id="num"><br>
+        <button onclick="fibo()">Print Fibonacci series</button></p>
+        
+        <p id="demo1"></p>
+    <script>
+        async function fibo()
+        {
+            
+            function myDisplay(c){
+                document.getElementById("demo1").innerHTML=c;
+            }
+            let myPromise = new Promise(function(resolve,reject){
+                let a = document.getElementById("num").value;
+                let n1=1;
+                for(let i=a;i>=1;i--)
+            {
+                n1=n1*i;
+            }
+               if(n1>0){
+                resolve(n1);
+               }
+               else{
+                reject("null");
+               }
+            });
+            await myPromise.then(
+                function(value) {myDisplay(value);},
+                function(error) {myDisplay(error);}
+            );
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            Large_Callback
+        </title>
+    </head>
+    <body>
+        <h1>Largest Number</h1>
+        <p>Enter number1: <input type="number" id="num1"><br>
+            <p>Enter number2: <input type="number" id="num2"><br>
+            <button onclick="fibo()">Print Large number</button></p>
+            
+            <p id="demo1"></p>
+    <script>
+        function fibo()
+        {
+            
+            function myPrint(c){
+                document.getElementById("demo1").innerHTML=c;
+            }
+            let a = document.getElementById("num1").value;
+            let b = document.getElementById("num2").value;
+            let n;
+            function myCal(a,b,myCallback){
+                if(a>b){
+                n=a;
+            }
+            else{
+                n=b;
+            }
+               myCallback(n);
+            }
+            myCal(a,b,myPrint);
+        }
+    </script>
+    </body>
+</html>

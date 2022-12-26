@@ -1,0 +1,32 @@
+for all extension : liveserver
+
+
+npx create-react-app myapp
+
+
+9a
+npm install axios
+npm install bootstrap
+
+10
+npm install react-router-dom
+
+
+
+
+npm start
+
+
+
+
+9b
+mkdir ak
+npm init
+entry: express.js
+npm install jsonwebtoken
+node express.js
+
+
+
+7
+extension: thunderclient

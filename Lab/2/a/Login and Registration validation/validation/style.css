@@ -1,0 +1,8 @@
+ .login,.registration {
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: large;
+     color: #fff;
+     position: absolute;
+     left: 40%;
+     top: 10%;
+ }
